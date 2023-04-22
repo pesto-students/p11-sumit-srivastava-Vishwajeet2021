@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Question and answer</title>
+    <style>
+        @keyframes moveFraction {
+            0% {
+                color: yellow;
+                transform: translate(-355px, 60px);
+            }
+            50% {
+                transform: translate(0px, 60px);
+            }
+            100% {
+                color: red;
+                transform: translate(0px, 0px);
+            }
+        }
+
+        #question {
+            position: relative;
+            transition: transform 0.6s ease-in-out;
+        }
+
+        #question:hover {
+            transform: scale(0.9);
+        }
+
+        #answer {
+            font-size: 20px;
+            color: black;
+            animation-name: moveFraction;
+            animation-delay: 1s;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+<body>
+    <p id="question">4 + 2 = <span id="answer"> <sup>3</sup>&frasl;<sub>4</sub></span>%</p>
+</body>
+</html>

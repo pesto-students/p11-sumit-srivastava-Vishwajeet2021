@@ -1,0 +1,27 @@
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+    text-align: center;
+ }
+ 
+ .x {
+    color: red;
+ }
+ 
+ .o {
+    color: blue;
+  }
+  
+ #board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 3px;
+ }
+ 
+ #board > div {
+    border: 1px solid LightSkyBlue;
+    text-align: center;
+ }
+ 

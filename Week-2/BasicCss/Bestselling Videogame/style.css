@@ -1,0 +1,37 @@
+/* Global styles */
+:root {
+    --table-color: #00b3b3;
+    --w-big-color: #f1f1f1;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Table styles */
+  #game-table {
+    border: 2px solid var(--table-color);
+    text-align: center;
+    height: 200px;
+    width: 400px;
+  }
+  
+  #game-table caption {
+    text-transform: uppercase;
+    background-color: var(--table-color);
+    color: white;
+    padding: 10px;
+  }
+  
+  #game-table td, #game-table th {
+    padding: 5px;
+  }
+  
+  #game-table th {
+    background-color: var(--w-big-color);
+  }
+  
+  #game-table tr:nth-child(even) {
+    background-color: var(--w-big-color);
+  }
+  

@@ -1,0 +1,84 @@
+/* Default fonts */
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+  }
+  
+  /* Heading */
+  h1 {
+    font-size: 16px;
+    color: #444444;
+    text-align: center;
+  }
+  
+  /* Container class */
+  .container {
+    text-align: center;
+    margin: 5px;
+    font-size: 13px;
+  }
+  
+  /* Offer class */
+  .offer {
+    display: inline-block;
+    width: 400px;
+    margin: 4px;
+    text-align: center;
+    border: 1px solid #ccccce;
+  }
+  
+  /* Offer title class */
+  .offerTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #00b3b3;
+    margin: 0;
+    padding: 15px;
+  }
+  
+  /* Offer contents class */
+  .offerContents {
+    padding: 20px;
+    background-color: #fafafa;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    background-color: #ffffff;
+    border-spacing: 0;
+  }
+  
+  table th {
+    font-size: 12px;
+    font-weight: bold;
+    color: #777777;
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  table td {
+    font-weight: lighter;
+    color: #444444;
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  
+  table th,
+  table td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  /* Additional class */
+  .finalValue {
+    font-weight: bold;
+    color: #2222ff;
+  }
+  

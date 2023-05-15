@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Window Object Properties</title>
+</head>
+<body>
+  <script>
+    function displayWindowProperties() {
+      // Display user agent string
+      console.log("User Agent: " + window.navigator.userAgent);
+
+      // Display screen dimensions
+      console.log("Screen Width: " + window.screen.width);
+      console.log("Screen Height: " + window.screen.height);
+
+      // Display current URL and path
+      console.log("Current URL: " + window.location.href);
+      console.log("Current Path: " + window.location.pathname);
+
+      // Store and retrieve data from sessionStorage
+      window.sessionStorage.setItem("sessionData", "This is session data");
+      console.log("Session Storage Data: " + window.sessionStorage.getItem("sessionData"));
+
+      // Store and retrieve data from localStorage
+      window.localStorage.setItem("localData", "This is local data");
+      console.log("Local Storage Data: " + window.localStorage.getItem("localData"));
+    }
+
+    // Call displayWindowProperties() when the page loads
+    window.onload = displayWindowProperties;
+  </script>
+</body>
+</html>
+

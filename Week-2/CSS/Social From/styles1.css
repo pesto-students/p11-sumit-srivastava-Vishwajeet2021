@@ -1,0 +1,12 @@
+/* Align form widgets vertically */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Add some spacing between form elements */
+  label, input, textarea, div {
+    margin: 5px 0;
+  }
+  

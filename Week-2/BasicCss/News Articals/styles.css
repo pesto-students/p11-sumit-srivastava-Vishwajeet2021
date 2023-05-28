@@ -1,0 +1,40 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: gray;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: white;
+    background-color: red;
+    padding: 5px;
+  }
+  
+  /* Image styles */
+  img {
+    width: 300px;
+  }
+  
+  /* Author name and date styles */
+  #author-name-and-date {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: lightgray;
+  }
+  
+  /* Article text styles */
+  p {
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    color: gray;
+  }
+  
+  /* Share links styles */
+  p a {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: blue;
+  }
+  

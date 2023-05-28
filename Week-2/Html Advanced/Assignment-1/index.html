@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="This is an example web page.">
+  <meta name="keywords" content="example, web page, HTML">
+  <meta name="author" content="Your Name">
+  <title>My Example Web Page</title>
+</head>
+<body>
+ <!-- The <form> element defines a web form -->
+<form action="submit-form.html" method="POST" enctype="multipart/form-data">
+
+    <!-- Each form field is wrapped in a <div> with the class "form-group" -->
+    <div class="form-group">
+      <!-- The <label> element provides a label for the form field -->
+      <label for="fullName">Full Name</label>
+      <!-- The <input> element is used for text input fields -->
+      <!-- The "type" attribute specifies the type of input, such as "text" or "email" -->
+      <!-- The "name" attribute specifies the name of the input, which will be used to identify it when the form is submitted -->
+      <!-- The "id" attribute provides a unique identifier for the input, which is used by the label's "for" attribute to associate it with the input field -->
+      <!-- The "required" attribute makes the input field required, so the user must fill it in before submitting the form -->
+      <input type="text" name="fullName" id="fullName" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" name="email" id="email" required>
+    </div>
+  
+    <div class="form-group">
+      <label for="about">About Me</label>
+      <!-- The <textarea> element is used for multi-line text input fields -->
+      <!-- The "rows" and "cols" attributes specify the size of the text input field in rows and columns -->
+      <textarea name="about" id="about" rows="3" cols="50"></textarea>
+    </div>
+  
+    <div class="form-group">
+      <label for="picture">Profile Picture</label>
+      <!-- The "type" attribute is set to "file" to allow the user to select a file from their device -->
+      <!-- This input field does not have the "required" attribute, as it is not necessary for the user to upload a profile picture -->
+      <input type="file" name="picture" id="picture">
+    </div>
+  
+    <div class="form-group">
+      <!-- The <button> element is used for the submit button -->
+      <!-- This is more semantic than using an <input> element with the "type" attribute set to "submit" -->
+      <button type="submit">Join Now</button>
+    </div>
+  </form>
+  
+</body>
+</html>

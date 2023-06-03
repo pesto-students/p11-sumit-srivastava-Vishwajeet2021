@@ -2,26 +2,31 @@
 <html lang="en">
    <head>
       <title>Tic-Tac-Toe</title>
-      <link rel="stylesheet" href="tictactoe.css">
-      <script src="tictactoe.js"></script>
+      <link rel="stylesheet" href="./tictactoe.css">
    </head>
    <body>
-      <h1>Tic-Tac-Toe</h1>
+      <nav class="navbar">
+         <h1>Tic-Tac-Toe</h1>
+      </nav>
 
       <!-- 3x3 grid for the game board -->
-      <div id="gameBoard">
-         <button></button>
-         <button></button>
-         <button></button>
-         <button></button>
-         <button></button>
-         <button></button>
-         <button></button>
-         <button></button>
-         <button></button>
-      </div>
+      <div id="gameContainer">
+         <div id="gameBoard">
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+         </div>
 
-      <p id="turnInfo">TURN INFO</p>
-      <button id="newGameButton">New game</button>
+         <p id="turnInfo">TURN INFO</p>
+         <button id="newGameButton">New Game</button>
+      </div>
+     
+      <script src="./tictactoe.js"></script>
    </body>
 </html>

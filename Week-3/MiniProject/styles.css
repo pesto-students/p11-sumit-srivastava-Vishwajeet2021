@@ -1,39 +1,63 @@
 
-        /* add CSS styles for navbar, hero, and other sections here */
-        @import url('https://fonts.googleapis.com/css2?family=Sono:wght@200&display=swap');
+       /* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
-        body {
-            font-family: 'Sono', sans-serif;
-        }
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
 
-        /* Nav Section */
-        nav {
-            color: #fff;
-            display: flex;
-            justify-content: flex-end;
-            padding: 10px;
-        }
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        nav li {
-            margin: 0 10px;
-        }
-
-        nav a {
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
+}
+/* General styles end */
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  
 
         /* Hero Section */
         header {

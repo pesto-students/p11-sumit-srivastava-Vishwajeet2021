@@ -1,28 +1,76 @@
-body {
-    font-family: Roboto, Helvetica, sans-serif;
+.x {
+   color: red;
+}
+
+.o {
+   color: blue;
+}
+.navbar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: purple;
+   padding: 10px;
+
  }
  
- .x {
-    color: red;
+ .navbar h1 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0;
+   font-size: 28px;
+   color: white;
  }
  
- .o {
-    color: blue;
+#gameContainer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 80vh;
+}
+
+#gameBoard {
+   font: 85px arial, sans-serif;
+   margin: 3px;
+
+   display: grid;
+   place-content: center;
+   grid-template-columns: 100px 100px 100px;
+   grid-template-rows: 100px 100px 100px;
+   grid-gap: 10px;
+}
+
+#gameBoard > button {
+   border: 1px solid LightSkyBlue;
+   text-align: center;
+   font-size: 100%;
+   font-family: inherit;
+   color: black;
+}
+
+#newGameButton {
+   margin-top: 10px;
+}
+
+#resultPopup {
+   position: absolute;
+   top: calc(35% - 50px);
+   left: 0;
+   right: 0;
+   margin: auto;
+   width: fit-content;
+   padding: 10px 20px;
+   background-color: rgba(0, 0, 0, 0.7);
+   border-radius: 5px;
+   text-align: center;
+   font-size: 36px;
+   color: white;
+   z-index: 9999;
+}
+button.winning {
+   background-color: yellow;
  }
  
- #gameBoard {
-    font: 85px arial, sans-serif;
-    margin: 3px;
- 
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px;
-    grid-gap: 10px;
- }
- 
- #gameBoard > button {
-    border: 1px solid LightSkyBlue;
-    text-align: center;
-    font-size: 100%;
-    font-family: inherit;
- }
